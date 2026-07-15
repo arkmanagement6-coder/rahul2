@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#EAF4FF" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#F5F9FF" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Primary Blue Gradient -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0057FF"/>
+      <stop offset="100%" stop-color="#003399"/>
+    </linearGradient>
+
+    <!-- Glassmorphism Card Gradient -->
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Card Shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#003399" flood-opacity="0.12"/>
+    </filter>
+
+    <!-- Accent Sky Blue Gradient -->
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0057FF"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Light Glow -->
+  <circle cx="250" cy="250" r="230" fill="url(#bgGrad)"/>
+
+  <!-- Laptop Base & Screen (Symbolic) -->
+  <g transform="translate(75, 180)" filter="url(#shadow)">
+    <!-- Screen Backing -->
+    <rect x="20" y="0" width="310" height="200" rx="16" fill="#0f172a"/>
+    <!-- Laptop Screen Display -->
+    <rect x="30" y="10" width="290" height="180" rx="8" fill="#1e293b"/>
+    <!-- Code Lines inside Screen -->
+    <rect x="45" y="25" width="80" height="8" rx="4" fill="#64748b"/>
+    <rect x="45" y="40" width="120" height="8" rx="4" fill="#0057FF"/>
+    <rect x="45" y="55" width="100" height="8" rx="4" fill="#38BDF8"/>
+    <circle cx="300" cy="30" r="4" fill="#EF4444"/>
+    <circle cx="290" cy="30" r="4" fill="#F59E0B"/>
+    <circle cx="280" cy="30" r="4" fill="#10B981"/>
+
+    <!-- Keyboard Base -->
+    <path d="M 0 200 L 350 200 L 370 220 L -20 220 Z" fill="#475569"/>
+    <rect x="-20" y="220" width="390" height="8" rx="4" fill="#334155"/>
+    <rect x="145" y="205" width="60" height="8" rx="2" fill="#1e293b"/>
+  </g>
+
+  <!-- Floating Wireframe Card 1 (Glassmorphism) -->
+  <g transform="translate(230, 80)" filter="url(#shadow)">
+    <rect x="0" y="0" width="180" height="130" rx="16" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+    <!-- Card Header -->
+    <circle cx="30" cy="30" r="14" fill="url(#blueGrad)"/>
+    <path d="M 26 30 L 34 30 M 30 26 L 30 34" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <rect x="56" y="20" width="80" height="10" rx="5" fill="#1e293b"/>
+    <rect x="56" y="36" width="50" height="6" rx="3" fill="#64748b"/>
+    <!-- Card Body Content Grid -->
+    <rect x="20" y="65" width="140" height="8" rx="4" fill="#0057FF" fill-opacity="0.1"/>
+    <rect x="20" y="80" width="100" height="8" rx="4" fill="#0057FF" fill-opacity="0.1"/>
+    <rect x="20" y="95" width="120" height="8" rx="4" fill="#16A34A" fill-opacity="0.2"/>
+  </g>
+
+  <!-- Floating Chart Card 2 (Glassmorphism) -->
+  <g transform="translate(40, 60)" filter="url(#shadow)">
+    <rect x="0" y="0" width="160" height="120" rx="16" fill="url(#glassGrad)" stroke="rgba(255,255,255,0.6)" stroke-width="1.5"/>
+    <rect x="20" y="20" width="60" height="8" rx="4" fill="#1e293b"/>
+    <!-- Bars in Chart -->
+    <rect x="20" y="50" width="15" height="45" rx="4" fill="url(#blueGrad)"/>
+    <rect x="45" y="35" width="15" height="60" rx="4" fill="url(#skyGrad)"/>
+    <rect x="70" y="65" width="15" height="30" rx="4" fill="#E2E8F0"/>
+    <rect x="95" y="45" width="15" height="50" rx="4" fill="url(#blueGrad)"/>
+    <rect x="120" y="55" width="15" height="40" rx="4" fill="url(#skyGrad)"/>
+  </g>
+
+  <!-- Interactive Graphic Decorators -->
+  <!-- Gear -->
+  <g transform="translate(390, 260)" fill="none" stroke="#0057FF" stroke-width="3" stroke-linecap="round">
+    <circle cx="30" cy="30" r="16"/>
+    <path d="M 30 6 L 30 12 M 30 48 L 30 54 M 6 30 L 12 30 M 48 30 L 54 30"/>
+    <path d="M 13 13 L 18 18 M 42 42 L 47 47 M 13 47 L 18 42 M 42 13 L 47 18"/>
+  </g>
+
+  <!-- Code Tag -->
+  <g transform="translate(30, 280)" stroke="url(#skyGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 15 10 L 5 20 L 15 30 M 35 10 L 45 20 L 35 30 M 27 8 L 23 32"/>
+  </g>
+
+  <!-- Sparkles -->
+  <g transform="translate(420, 100)" fill="url(#skyGrad)">
+    <path d="M 10 0 L 13 7 L 20 10 L 13 13 L 10 20 L 7 13 L 0 10 L 7 7 Z"/>
+  </g>
+  <g transform="translate(350, 40)" fill="url(#blueGrad)">
+    <path d="M 6 0 L 8 4 L 12 6 L 8 8 L 6 12 L 4 8 L 0 6 L 4 4 Z"/>
+  </g>
+</svg>
